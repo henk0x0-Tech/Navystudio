@@ -1,21 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import './Hero.css';
 
 const Hero = () => {
-    const heroRef = useRef(null);
-    const [isAnimated, setIsAnimated] = useState(false);
+    const [isVisible] = useState(true); // Start visible for faster LCP
     const whatsappNumber = '916366515258';
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Navya!%20I'm%20interested%20in%20your%20bridal%20makeup%20services.`;
-
-    useEffect(() => {
-        // Immediately show hero content for faster LCP
-        if (heroRef.current) {
-            heroRef.current.classList.add('hero--visible');
-        }
-        // Add animations after a short delay
-        const timer = setTimeout(() => setIsAnimated(true), 100);
-        return () => clearTimeout(timer);
-    }, []);
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -26,9 +15,8 @@ const Hero = () => {
 
     return (
         <section
-            className="hero"
+            className={`hero ${isVisible ? 'hero--visible' : ''}`}
             id="hero"
-            ref={heroRef}
             aria-label="Welcome to Navya Makeup & Hairstyle"
             itemScope
             itemType="https://schema.org/WPHeader"

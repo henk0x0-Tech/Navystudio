@@ -7,7 +7,7 @@ const services = [
         name: "Bridal Makeup Package",
         price: "₹15,000",
         description: "Complete bridal transformation with premium products for your special day",
-        image: "/images/bridal-makeup.png",
+        image: "/images/bridal-makeup.jpg",
         alt: "Bridal makeup by Navya - Professional wedding makeup artist in Bangalore",
         featured: true
     },
@@ -16,7 +16,7 @@ const services = [
         name: "Party Makeup",
         price: "₹4,000",
         description: "Glamorous looks for special occasions and celebrations",
-        image: "/images/party-makeup.png",
+        image: "/images/party-makeup.jpg",
         alt: "Party makeup services in Bangalore by Navya Makeup Artist",
         featured: false
     },
@@ -25,7 +25,7 @@ const services = [
         name: "Non-Bridal Makeup",
         price: "₹3,500",
         description: "Professional makeup for any event or occasion",
-        image: "/images/non-bridal-makeup.png",
+        image: "/images/non-bridal-makeup.jpg",
         alt: "Non-bridal professional makeup by Navya in Bengaluru",
         featured: false
     },
@@ -43,7 +43,7 @@ const services = [
         name: "Mehendi for Brides",
         price: "₹2,000",
         description: "Traditional and modern mehendi designs",
-        image: "/images/mehendi.png",
+        image: "/images/mehendi.jpg",
         alt: "Bridal mehendi henna designs by Navya in Bangalore",
         featured: false
     },
@@ -52,7 +52,7 @@ const services = [
         name: "Hairstyle",
         price: "From ₹1,500",
         description: "Trendy and elegant hairstyling for all occasions",
-        image: "/images/hairstyle.png",
+        image: "/images/hairstyle.jpg",
         alt: "Professional hairstylist in Bangalore - Navya Hairstyle services",
         featured: false
     },
@@ -70,7 +70,7 @@ const services = [
         name: "Saree Pre-Pleating & Box Folding",
         price: "₹500",
         description: "Expert saree draping and folding services",
-        image: "/images/saree.png",
+        image: "/images/saree.jpg",
         alt: "Saree draping and pre-pleating service in Bangalore",
         featured: false
     }
