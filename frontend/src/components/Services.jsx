@@ -166,6 +166,7 @@ const Services = () => {
                                         alt={service.alt}
                                         className="services__image"
                                         loading="lazy"
+                                        decoding="async"
                                         width="400"
                                         height="300"
                                         onError={() => handleImageError(service.id)}

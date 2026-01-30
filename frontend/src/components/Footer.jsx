@@ -214,9 +214,9 @@ const Footer = () => {
                         <span> Bridal Makeup Artist in Bangalore</span>
                     </p>
                     <nav className="footer__legal" aria-label="Legal links">
-                        <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+                        <a href="#privacy-policy" aria-label="Privacy Policy">Privacy Policy</a>
                         <span className="footer__divider" aria-hidden="true">|</span>
-                        <a href="#" aria-label="Terms of Service">Terms of Service</a>
+                        <a href="#terms-of-service" aria-label="Terms of Service">Terms of Service</a>
                     </nav>
                 </div>
             </div>

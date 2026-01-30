@@ -1,28 +1,20 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Hero.css';
 
 const Hero = () => {
     const heroRef = useRef(null);
+    const [isAnimated, setIsAnimated] = useState(false);
     const whatsappNumber = '916366515258';
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Navya!%20I'm%20interested%20in%20your%20bridal%20makeup%20services.`;
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('hero--visible');
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
-
+        // Immediately show hero content for faster LCP
         if (heroRef.current) {
-            observer.observe(heroRef.current);
+            heroRef.current.classList.add('hero--visible');
         }
-
-        return () => observer.disconnect();
+        // Add animations after a short delay
+        const timer = setTimeout(() => setIsAnimated(true), 100);
+        return () => clearTimeout(timer);
     }, []);
 
     const scrollToSection = (sectionId) => {
@@ -126,6 +118,11 @@ const Hero = () => {
                             src="/images/navya-profile.jpg"
                             alt="Navya - Professional Makeup Artist in Bangalore"
                             className="hero__visual-image"
+                            width="320"
+                            height="400"
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
                         />
                         <div className="hero__visual-glow"></div>
                     </div>
