@@ -1,0 +1,30 @@
+# Robots.txt for Navya Makeup & Hairstyle
+# https://navyamakeup.com
+
+User-agent: *
+Allow: /
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow admin and system directories
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://navyamakeup.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
