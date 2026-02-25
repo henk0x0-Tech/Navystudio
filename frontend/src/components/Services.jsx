@@ -5,7 +5,7 @@ const services = [
     {
         id: 1,
         name: "Bridal Makeup Package",
-        price: "₹15,000",
+        price: "₹25,000",
         description: "Complete bridal transformation with premium products for your special day",
         image: "/images/bridal-makeup.jpg",
         alt: "Bridal makeup by Navya - Professional wedding makeup artist in Bangalore",
@@ -23,7 +23,7 @@ const services = [
     {
         id: 3,
         name: "Non-Bridal Makeup",
-        price: "₹3,500",
+        price: "₹4,000",
         description: "Professional makeup for any event or occasion",
         image: "/images/non-bridal-makeup.jpg",
         alt: "Non-bridal professional makeup by Navya in Bengaluru",
@@ -72,6 +72,15 @@ const services = [
         description: "Expert saree draping and folding services",
         image: "/images/saree.jpg",
         alt: "Saree draping and pre-pleating service in Bangalore",
+        featured: false
+    },
+    {
+        id: 9,
+        name: "Rent Jewellery",
+        price: "",
+        description: "Stunning bridal and party jewellery available for rent to complete your look",
+        image: "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=600",
+        alt: "Rent bridal jewellery in Bangalore - Navya Makeup Artist",
         featured: false
     }
 ];

@@ -2,14 +2,15 @@ import { useState, useEffect, useRef } from 'react';
 import './Contact.css';
 
 const services = [
-    "Bridal Makeup Package - ₹15,000",
+    "Bridal Makeup Package - ₹25,000",
     "Party Makeup - ₹4,000",
     "Non-Bridal Makeup - ₹4,000",
     "Pre-Wedding Shoot Makeup - ₹3,500",
     "Mehendi for Brides - ₹2,000",
     "Saree Pre-Pleating & Box Folding - ₹350",
     "Hairstyle - From ₹800",
-    "Nail Art - From ₹700"
+    "Nail Art - From ₹700",
+    "Rent Jewellery"
 ];
 
 const Contact = () => {

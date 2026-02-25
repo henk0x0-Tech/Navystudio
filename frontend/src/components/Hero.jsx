@@ -39,8 +39,8 @@ const Hero = () => {
 
                     {/* Main Heading - SEO H1 */}
                     <h1 className="hero__title" itemProp="headline">
-                        <span className="hero__title-line">Navya</span>
-                        <span className="hero__title-line hero__title-line--gold">Makeup & Hairstyle</span>
+                        <span className="hero__title-line">Navyashravs</span>
+                        <span className="hero__title-line hero__title-line--gold">makeup & hairstyle</span>
                     </h1>
 
                     {/* Value Proposition - SEO subtitle */}

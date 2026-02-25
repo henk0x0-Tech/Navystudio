@@ -250,6 +250,36 @@
     margin-bottom: 0;
 }
 
+/* Branch Divider */
+.location__branch-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    position: relative;
+}
+
+.location__branch-divider::before,
+.location__branch-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.4), transparent);
+}
+
+.location__branch-divider-text {
+    padding: 0.5rem 1.5rem;
+    background: rgba(212, 168, 83, 0.1);
+    border: 1px solid rgba(212, 168, 83, 0.3);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .location__wrapper {
